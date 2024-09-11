@@ -3,10 +3,10 @@
 #define POINT_H
 
 class Point {
-private:
-    double x, y;
-
 public:
+    double x;
+    double y;
+
     // Default constructor
     Point();
 

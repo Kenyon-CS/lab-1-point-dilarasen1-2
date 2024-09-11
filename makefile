@@ -6,10 +6,10 @@ CXXFLAGS = -Wall -std=c++11
 TARGET = point_program
 
 # Source files
-SRCS = main.cpp Point.cpp
+SRCS = main.cpp Point.cpp Line.cpp
 
 # Object files
-OBJS = main.o Point.o
+OBJS = main.o Point.o Line.o
 
 # Default target
 all: $(TARGET)
@@ -19,12 +19,16 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 # Rule to compile main.cpp into main.o
-main.o: main.cpp Point.h
+main.o: main.cpp Point.h Line.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
 # Rule to compile Point.cpp into Point.o
 Point.o: Point.cpp Point.h
 	$(CXX) $(CXXFLAGS) -c Point.cpp
+
+# Rule to compile Line.cpp into Line.o
+Line.o: Line.cpp Line.h Point.h
+	$(CXX) $(CXXFLAGS) -c Line.cpp
 
 # Clean up build files
 clean:

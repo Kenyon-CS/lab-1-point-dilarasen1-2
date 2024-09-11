@@ -1,0 +1,18 @@
+Line equation: 1x + -1y + 1 = 0
+Line equation: 1x + 1y + -3 = 0
+The lines intersect at (1, 2).
+
+Line equation: 2x + 3y + -5 = 0
+Line equation: 4x + 6y + 7 = 0
+The lines do not intersect.
+
+Line equation: 2x + 3y + -6 = 0
+Line equation: 4x + 6y + -12 = 0
+The lines are the same.
+The lines do not intersect.
+
+Invalid argument error: Invalid: Both a and b cannot be zero.
+
+Line equation: 1x + 2y + 3 = 0
+Line equation: 2x + -1y + 5 = 0
+The lines intersect at (-2.6, -0.2).
